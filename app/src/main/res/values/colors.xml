@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  analog clock colors  -->
+    <color name="circleFrame">@color/black</color>
+    <color name="numerals">@android:color/holo_blue_dark</color>
+    <color name="numeralLines">@color/black</color>
+    <color name="hourHand">@color/black</color>
+    <color name="minuteHand">@color/black</color>
+    <color name="secondHand">@android:color/holo_red_light</color>
+
 </resources>

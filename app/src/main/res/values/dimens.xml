@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--  hands size in percent  -->
+    <item name="hourHandSize" type="integer">50</item>
+    <integer name="minuteHandSize">77</integer>
+    <integer name="secondHandSize">80</integer>
 
+    <!--  hands width in percent (recommended values: 1..7 )  -->
+    <item name="hourHandWidth" type="integer">10</item>
+    <integer name="minuteHandWidth">7</integer>
+    <integer name="secondHandWidth">3</integer>
 </resources>
