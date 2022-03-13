@@ -134,8 +134,8 @@ class AnalogClockView @JvmOverloads constructor(
             val num = number.toString()
             mPaint.getTextBounds(num, 0, num.length, mRect)
             val angle = Math.PI / 6 * (number - 3)
-            val x = (mCentreX + Math.cos(angle) * (mRadius - 30) - mRect.width() / 2).toInt()
-            val y = (mCentreY + Math.sin(angle) * (mRadius - 30) + mRect.height() / 2).toInt()
+            val x = (mCentreX + Math.cos(angle) * (mRadius - 40) - mRect.width() / 2).toInt()
+            val y = (mCentreY + Math.sin(angle) * (mRadius - 40) + mRect.height() / 2).toInt()
             canvas.drawText(num, x.toFloat(), y.toFloat(), mPaint)
         }
     }
