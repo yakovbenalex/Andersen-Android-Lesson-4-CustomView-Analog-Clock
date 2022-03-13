@@ -60,6 +60,7 @@ class AnalogClockView @JvmOverloads constructor(
         mPaint.color = ContextCompat.getColor(context, colour)
         mPaint.style = stroke
         mPaint.strokeWidth = strokeWidth.toFloat()
+        mPaint.setStrokeCap(Paint.Cap.ROUND) // round stroke line cap
         mPaint.isAntiAlias = true
     }
 
@@ -143,6 +144,7 @@ class AnalogClockView @JvmOverloads constructor(
         mPaint.reset()
         // paint style for small lines
         setPaintAttributes(R.color.numeralLines, Paint.Style.STROKE, 4)
+        mPaint.setStrokeCap(Paint.Cap.ROUND) // round stroke line cap
         for (i in 1..60) {
             canvas.rotate(6F, mCentreX.toFloat(), mCentreY.toFloat())
             if (i % 5 == 0) {
@@ -152,7 +154,7 @@ class AnalogClockView @JvmOverloads constructor(
                     mCentreX.toFloat(),
                     50F,
                     mCentreX.toFloat(),
-                    7F,
+                    11F,
                     mPaint
                 )
             } else {
@@ -160,7 +162,7 @@ class AnalogClockView @JvmOverloads constructor(
                     mCentreX.toFloat(),
                     30F,
                     mCentreX.toFloat(),
-                    7F,
+                    10F,
                     mPaint
                 )
             }

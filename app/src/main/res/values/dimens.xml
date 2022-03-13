@@ -7,6 +7,6 @@
 
     <!--  hands width in percent (recommended values: 1..7 )  -->
     <item name="hourHandWidth" type="integer">10</item>
-    <integer name="minuteHandWidth">7</integer>
+    <integer name="minuteHandWidth">6</integer>
     <integer name="secondHandWidth">3</integer>
 </resources>
